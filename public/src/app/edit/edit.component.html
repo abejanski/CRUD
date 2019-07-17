@@ -1,0 +1,9 @@
+<div class="h1">Edit Component</div>
+<form (submit)= "onSubmit()">
+     {{task | json}}
+
+    <input type="text" placeholder="title" class="form-control col-6 mb-2" name="task.title" [(ngModel)]="task.title"> 
+    <input type="text" placeholder="description" class="form-control col-6 mb-2" name="task.description" [(ngModel)]="task.description">
+    <input type="text" placeholder="completed" class="form-control col-6 mb-2" name="task.completed" [(ngModel)]="task.completed">
+    <input type="submit" class="btn btn-warning">
+</form>

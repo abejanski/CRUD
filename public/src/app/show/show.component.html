@@ -1,0 +1,10 @@
+{{task | json}}
+<div class="allTasks" >
+        <div class="row mb-4">
+            <div class="col">{{task.title}} </div>
+            <div class="col">{{task.description}} </div>
+            <div class="col">{{task.completed}} </div>
+        </div>
+<button class="btn btn-primary" [routerLink]="['/edit/'+ task._id]">Edit</button>
+</div>
+        
